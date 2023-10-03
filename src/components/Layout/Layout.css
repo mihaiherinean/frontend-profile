@@ -9,17 +9,16 @@
     min-height: 100vh;
     display: block;
     position: fixed;
-    left: 8rem;
+    left: 13.9375rem;
     top: 0;
     right: 0;
     bottom: 0;
     overflow: auto;
-    background-color: white;
-    color: white;
+    background-color: var(--color-white);
+    color: var(--color-white);
     padding: 4.5rem 1rem 1rem;
 
     @media screen and (max-width: 36rem) {
-        justify-content: center;
         left: 5rem;
     }
 }
@@ -36,6 +35,6 @@
 .layout__content{
     width: 100%;
     min-height: 100%;
-    background-color: white;
-    color: black;
+    background-color: var(--color-white);
+    color: var(--color-black);
 }
