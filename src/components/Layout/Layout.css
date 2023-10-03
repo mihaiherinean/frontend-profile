@@ -25,11 +25,18 @@
 
 .layout__header {
     height: 3.5rem;
-    background-color: var(--color-secondary);
+    background-color: var(--color-tertiary);
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout__headerTitle {
+    color: var(--color-white);
 }
 
 .layout__content{
