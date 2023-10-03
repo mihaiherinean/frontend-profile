@@ -1,0 +1,41 @@
+
+.layout{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.layout__scroll{
+    min-height: 100vh;
+    display: block;
+    position: fixed;
+    left: 8rem;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    background-color: white;
+    color: white;
+    padding: 4.5rem 1rem 1rem;
+
+    @media screen and (max-width: 36rem) {
+        justify-content: center;
+        left: 5rem;
+    }
+}
+
+.layout__header {
+    height: 3.5rem;
+    background-color: var(--color-secondary);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+.layout__content{
+    width: 100%;
+    min-height: 100%;
+    background-color: white;
+    color: black;
+}

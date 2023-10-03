@@ -1,25 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import { userRoutes } from './mock/data/routes';
+import { userData } from './mock/data/user';
+import Layout from './components/Layout/Layout';
+import RouteComponent from './components/RouteComponent/RouteComponent';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <>
+        <Routes>
+          {userRoutes.map(route => (
+            <Route path={route.path} element={
+              <Layout>
+                  <RouteComponent 
+                    component={route.component} 
+                    props={{...userData}}
+                  />
+              </Layout>}
+            />
+          ))}
+          <Route path="*" element={
+            <Layout>
+              <p>Page not found!!!</p>
+            </Layout>}
+          />
+        </Routes>
+      </>
+    </BrowserRouter>
   );
 }
 
