@@ -1,9 +1,20 @@
 import React from 'react'
+import { IUser } from '../../types/IUser'
+import './Profile.css';
+import About from './components/About/About';
+import Basic from './components/Basic/Basic';
+interface IProfile {
+  userData: IUser;
+  className?: string
+}
 
-function Profile() {
-
+function Profile({userData, className}:IProfile) {
+  const classNames = `profile ${className ? className : ""}`;
   return (
-    <div>Profile</div>
+    <div className={classNames}>
+        <About userData={userData}/>
+        <Basic userData={userData}/>
+    </div>
   )
 }
 

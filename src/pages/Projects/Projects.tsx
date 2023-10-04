@@ -1,8 +1,13 @@
 import React from 'react'
+import { IUser } from '../../types/IUser'
+interface IProjects {
+  userData: IUser;
+}
 
-function Projects() {
+function Projects({userData}:IProjects) {
+
   return (
-    <div>Projects</div>
+    <div></div>
   )
 }
 

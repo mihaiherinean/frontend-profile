@@ -7,7 +7,8 @@ interface IRouteComponent {
 }
 
 function RouteComponent({component, props}:IRouteComponent) {
-  const ComponentByName:React.ComponentType | null = getComponentByName(component)
+  const ComponentByName:React.ComponentType | null = getComponentByName(component);
+  
   if(ComponentByName){
     return props ? <ComponentByName {...props}/> : <ComponentByName/>;
   }

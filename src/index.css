@@ -10,10 +10,15 @@
   /* colors */
   --color-primary: #3E4048;
   --color-secondary: #292B33;
+  --color-secondary-rgb: 41, 43, 51;
   --color-tertiary: #1b1d24;
+  --color-quaternary: rgba(var(--color-secondary-rgb), 0.9);
   --color-white: #ffffff;
   --color-black: #000000;
   --color-blue: blue;
+  --color-blue-100: #444B5F;
+  --color-green: #219C90;
+  --color-grey: #6B6E77;
 
 
   /* fonts */

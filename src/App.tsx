@@ -1,8 +1,7 @@
 import React from 'react';
 import './App.css';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
-import { userRoutes } from './mock/data/routes';
-import { userData } from './mock/data/user';
+import { userData } from './mock/data/userData';
 import Layout from './components/Layout/Layout';
 import RouteComponent from './components/RouteComponent/RouteComponent';
 
@@ -11,12 +10,12 @@ function App() {
     <BrowserRouter>
       <>
         <Routes>
-          {userRoutes.map(route => (
-            <Route path={route.path} element={
+          {userData.routes.map(route => (
+            <Route path={route.path} key={route.name} element={
               <Layout>
                   <RouteComponent 
                     component={route.component} 
-                    props={{...userData}}
+                    props={{userData}}
                   />
               </Layout>}
             />
