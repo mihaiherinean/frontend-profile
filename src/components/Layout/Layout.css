@@ -33,6 +33,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, var(--color-secondary) 4px ), repeating-linear-gradient( #3E404855, #3E4048 );
 }
 
 .layout__headerTitle {

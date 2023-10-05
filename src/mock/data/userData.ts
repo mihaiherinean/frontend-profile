@@ -40,5 +40,5 @@ export const userData = {
     "Figma",
     "Adobe XD",
   ],
-  imgUrl: "https://community.adobe.com/t5/image/serverpage/image-id/145201iE0ECF5C6ECBD959E/image-size/large/is-moderation-mode/true?v=v2&px=999",
+  imgUrl: "https://media.licdn.com/dms/image/D4D03AQHq6jr4MfWlfQ/profile-displayphoto-shrink_400_400/0/1688819795003?e=1701907200&v=beta&t=d12azhIwVLbbbvKR8pOf7jW4zBioSgi8zBI4yYdbZ9c",
 };
