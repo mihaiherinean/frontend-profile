@@ -1,5 +1,8 @@
-import React from 'react'
+import React, {useState}  from 'react'
 import Sidebar from '../../components/Sidebar/Sidebar'
+import { RxHamburgerMenu } from 'react-icons/rx';
+import { AiOutlineClose } from 'react-icons/ai';
+
 import './Layout.css';
 
 interface ILayout {
@@ -7,13 +10,16 @@ interface ILayout {
 }
 
 function Layout({children}:ILayout) {
+  const [showSideBar, setShowSideBar] = useState(false);
     return (
     <div className="layout">
-      <Sidebar/>
+      <Sidebar showSideBar={showSideBar}/>
       <header className="layout__header">
-        <h1 className="layout__headerTitle"> {'<'}MihaiH{'/>'}</h1>
+       {!showSideBar && <RxHamburgerMenu size={30} className="layout__menu" onClick={() =>setShowSideBar(!showSideBar)}/>}
+       {showSideBar && <AiOutlineClose size={30} className="layout__menu" onClick={() =>setShowSideBar(!showSideBar)}/>}
+
       </header>
-      <main className="layout__scroll">
+      <main className={`layout__scroll ${showSideBar ? "layout__scroll--stay" : "layout__scroll--move"}`}>
         <div className="layout__content"> 
           {children}
         </div>

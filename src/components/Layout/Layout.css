@@ -10,7 +10,6 @@
     min-height: 100vh;
     display: block;
     position: fixed;
-    left: 13.9375rem;
     top: 0;
     right: 0;
     bottom: 0;
@@ -18,8 +17,24 @@
     background-color: var(--color-quaternary);
     padding: 4.5rem 1rem 1rem;
 
-    @media screen and (max-width: 36rem) {
-        left: 5rem;
+    @media screen and (min-width: 36rem) {
+        left: 13.9375rem;
+    }
+}
+
+.layout__scroll--move {
+    left: 0rem;
+    
+    @media screen and (min-width: 36rem) {
+        left: 13.9375rem;
+    }
+}
+
+.layout__scroll--stay {
+    left: 5rem;
+
+    @media screen and (min-width: 36rem) {
+        left: 13.9375rem;
     }
 }
 
@@ -30,14 +45,18 @@
     width: 100%;
     top: 0;
     z-index: 1;
+    padding-left: 1.55rem;
     display: flex;
-    justify-content: center;
     align-items: center;
     background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, var(--color-secondary) 4px ), repeating-linear-gradient( #3E404855, #3E4048 );
 }
 
-.layout__headerTitle {
+.layout__menu {
     color: var(--color-white);
+
+    @media screen and (min-width: 36rem) {
+        display: none;
+    }
 }
 
 .layout__content{
