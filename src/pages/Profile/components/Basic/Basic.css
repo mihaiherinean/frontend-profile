@@ -12,12 +12,25 @@
 
 .basic__title {
   font-size: 1.375rem;
+  margin-bottom: 1.25rem;
 }
 
 .basic__informations {
   width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(12.5rem, 1fr));
+  gap: 1rem;
+  margin-bottom: 2.4rem;
 }
 
-.basic__infoWrapper {
-  
+.basic__imageWrapper {
+  max-width: 44.25rem;
+  height: auto;
 }
+
+.basic__favoriteImage {
+  width: 100%;
+  height: 100%;
+  border-radius: .3125rem;
+}
+

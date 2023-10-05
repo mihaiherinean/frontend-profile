@@ -10,5 +10,6 @@ export interface IUser {
   description: string,
   routes: IRoute[],
   skills: string[],
-  imgUrl: string
+  imgUrl: string,
+  favoriteImage: string
 }

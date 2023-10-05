@@ -11,10 +11,10 @@ interface IInfo {
 function Info({name, value, className}:IInfo) {
   const classNames = `info ${className ? className : ""}`;
   return (
-    <td className={classNames}>
+    <div className={classNames}>
       <p className="info__name">{name}</p>
       <p className="info__value">{value + " " + getUnit(name)}</p>
-    </td>
+    </div>
   )
 }
 

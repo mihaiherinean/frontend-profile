@@ -5,11 +5,12 @@ import { CgProfile } from 'react-icons/cg';
 import { MdOutlineWorkOutline } from 'react-icons/md';
 
 interface ISidebar {
-  className?: string
+  className?: string,
+  showSideBar: boolean
 }
 
-function Sidebar({className}:ISidebar) {
-  const classNames = `sidebar ${className ? className : ""}`;
+function Sidebar({className, showSideBar}:ISidebar) {
+  const classNames = `sidebar ${className ? className : ""} ${showSideBar ? "sidebar--show" : "sidebar--hide"}`;
   return (
     <aside className={classNames}>
       <nav className="sidebar__list">
