@@ -1,0 +1,24 @@
+{
+  "id": 1,
+  "email": "mihai_herinean@yahoo.com",
+  "firstName": "Mihai",
+  "lastName": "Herinean",
+  "phone": "+40 7455 34 398",
+  "age": 24,
+  "experience": 1,
+  "linkedin": "linkedin.com/in/mihaiherinean/",
+  "routes": [
+    {
+        "name": "Profile",
+        "title": "Profile page",
+        "component": "Profile",
+        "path": "/"
+    },
+    {
+        "name": "Projects",
+        "title": "Projects page",
+        "component": "Projects",
+        "path": "/projects"
+    }
+  ]
+}
