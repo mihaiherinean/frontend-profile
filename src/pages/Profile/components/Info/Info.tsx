@@ -1,6 +1,6 @@
 import React from 'react'
 import './Info.css';
-import { getUnit } from '../../../../utils/getValueAndUnit';
+import { getUnit } from '../../../../utils/getUnit';
 
 interface IInfo {
   name: string | any,
