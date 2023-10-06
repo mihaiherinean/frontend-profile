@@ -1,5 +1,9 @@
 
 .profile {
+  
+}
+
+.profile__generalInformations {
   display: flex;
   gap: 1.5rem;
   width: 100%;
@@ -9,5 +13,4 @@
     flex-direction: column;
     height: unset;
   }
-
 }

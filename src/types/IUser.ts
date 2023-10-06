@@ -1,3 +1,4 @@
+import { IAsset } from "./IAsset"
 import { IGeneralInfo } from "./IGeneralInfo"
 import { IRoute } from "./IRoute"
 
@@ -11,5 +12,6 @@ export interface IUser {
   routes: IRoute[],
   skills: string[],
   imgUrl: string,
-  favoriteImage: string
+  favoriteImage: string,
+  assets: IAsset[]
 }
