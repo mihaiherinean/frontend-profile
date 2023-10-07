@@ -1,28 +1,48 @@
-import React from 'react'
-import './Asset.css';
-import { IAsset } from '../../../../types/IAsset';
-
+import React, { useState } from "react";
+import "./Asset.css";
+import { IAsset } from "../../../../types/IAsset";
+import InfoAsset from "./components/InfoAsset";
+import { MdOutlineExpandMore, MdOutlineExpandLess } from 'react-icons/md';
+ 
 interface IAssetT {
-    asset: IAsset,
-    className?: string
+  asset: IAsset;
+  className?: string;
 }
-function Asset({asset, className}:IAssetT) {
-    const classNames = `asset ${className ? className : ''}`;
+function Asset({ asset, className }: IAssetT) {
+  const classNames = `asset ${className ? className : ""}`;
+  const [expand, setExpand] = useState(true);
+  const hasExpand = asset.info.length >= 1 ? true : false;
   return (
     <div className={classNames}>
-        <h2 className="asset__name">{asset.name}</h2>
-        <div className="asset__wrapper">
-            <div className="asset__imgWrapper">
-                <img src={asset.image} alt="" className="asset__img"/>
-            </div>
-            <div className="asset__informations">
-                <h3 className="asset__title">{asset.title}</h3>
-                <p className="asset__subtitle">{asset.subtitle}</p>
-                <p className="asset__period">{asset.period.start + ' - ' + asset.period.end}</p>
-            </div>
+      <div className="asset_wrapper" onClick={hasExpand ? () => setExpand(!expand) : undefined}>
+        <h2 className="asset__name">
+          {asset.name + " (" + asset.info.length + ")"}
+        </h2>
+        {hasExpand ? (
+          expand ? (
+            <MdOutlineExpandLess size={40}/>
+          ) : (
+            <MdOutlineExpandMore size={40}/>
+          )
+        ) : null}
+      </div>
+      {hasExpand ? (
+        expand ? (
+          <div className="asset__list">
+            {asset.info.map((data) => (
+              <InfoAsset info={data} />
+            ))}
+          </div>
+        ) : null
+      ) : (
+        <div className="asset__list">
+          {asset.info.map((data) => (
+            <InfoAsset info={data} />
+          ))}
         </div>
+      )}
     </div>
-  )
+  );
 }
 
-export default Asset
+export default Asset;

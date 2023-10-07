@@ -7,7 +7,9 @@ interface IProjects {
 function Projects({userData}:IProjects) {
 
   return (
-    <div></div>
+    <div>
+      <h3>This page is under construction. Check back soon!</h3>
+    </div>
   )
 }
 
