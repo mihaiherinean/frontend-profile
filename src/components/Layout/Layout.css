@@ -7,7 +7,7 @@
 }
 
 .layout__scroll {
-    min-height: 100vh;
+    max-height: 100vh;
     display: block;
     position: fixed;
     top: 0;
@@ -64,7 +64,5 @@
 }
 
 .layout__content{
-    width: 100%;
-    height: 100%;
     color: var(--color-white);
 }
