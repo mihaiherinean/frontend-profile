@@ -6,6 +6,34 @@
 	margin-bottom: 2rem;
 }
 
-.asset__name {
- margin-bottom: 1rem;
+.asset_wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 1rem;
+	cursor: pointer;
+
+	@media screen and (max-width: 48rem) {
+		cursor: unset;
+	}
 }
+
+.asset__name {
+ 
+}
+
+.asset__list {
+	width: 100%;
+	height: 100%;
+}
+
+.asset__list--expand {
+	width: 100%;
+	height: 100%;
+}
+
+.asset__list--collapse {
+	width: 0;
+	height: 0;
+}
+

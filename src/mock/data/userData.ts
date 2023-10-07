@@ -12,7 +12,7 @@ export const userData = {
     linkedin: "linkedin.com/in/mihaiherinean/",
   },
   description:
-    "Hi There, I'm Mihai, a frontend developer with over a year of experience in technologies such as HTML, CSS, React, TypeScript, jQuery and Sass. Throughout this year, I have been part of an Agile team, collaborating with QA professionals, Designers, Business Analysts, and Product Managers to deliver high-quality development services.",
+    "Hi There, I'm Mihai, a Frontend Developer with over a year of experience in technologies such as HTML, CSS, React, TypeScript, jQuery and Sass. Throughout this year, I have been part of an Agile team, collaborating with QA professionals, Designers, Business Analysts, and Product Managers to deliver high-quality development services.",
   routes: [
     {
       name: "Profile",
@@ -57,7 +57,7 @@ export const userData = {
             start: "2018",
             end: "2022",
           },
-        },
+        }
       ],
     },
     {

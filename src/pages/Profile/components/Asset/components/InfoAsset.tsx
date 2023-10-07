@@ -9,7 +9,6 @@ interface IInfoAsset {
 
 function InfoAsset({info, className}:IInfoAsset) {
   const classNames = `infoAsset ${className ? className : ''}`;
-
   return (
     <div className={classNames}>
         <div className="infoAsset__imgWrapper">
