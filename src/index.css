@@ -24,3 +24,10 @@
   /* fonts */
   --font-primary: 'Inconsolata', 'sans-serif';
 }
+
+
+.highlight-margin {
+  border-top: .125rem solid var(--color-white);
+  border-bottom: .125rem solid var(--color-white);
+  border-radius: .375rem;
+}

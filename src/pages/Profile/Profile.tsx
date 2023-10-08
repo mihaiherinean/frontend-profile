@@ -14,12 +14,12 @@ function Profile({userData, className}:IProfile) {
   return (
     <div className={classNames}>
       <div className="profile__generalInformations">
-        <About userData={userData}/>
-        <Basic userData={userData}/>
+        <About userData={userData} className="highlight-margin"/>
+        <Basic userData={userData} className="highlight-margin"/>
       </div>
       <div className="profile__assets">
           {userData.assets.map(asset => (
-            <Asset asset={asset}/>
+            <Asset asset={asset} className="highlight-margin"/>
           ))}
       </div>
     </div>
