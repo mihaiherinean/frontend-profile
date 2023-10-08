@@ -12,10 +12,6 @@
 	align-items: center;
 	margin-bottom: 1rem;
 	cursor: pointer;
-
-	@media screen and (max-width: 48rem) {
-		cursor: unset;
-	}
 }
 
 .asset__name {
@@ -35,5 +31,11 @@
 .asset__list--collapse {
 	width: 0;
 	height: 0;
+}
+
+@media screen and (max-width: 48rem) {
+	.asset_wrapper {
+		cursor: unset;
+	}
 }
 

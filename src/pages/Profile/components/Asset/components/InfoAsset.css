@@ -4,21 +4,11 @@
 	padding-bottom: 1rem;
 	border-bottom: 2px solid var(--color-grey);
 	margin-bottom: 1rem;
-
-	@media screen and (max-width: 36rem) {
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
 }
 
 .infoAsset__imgWrapper {
 	max-width: 100px;
 	height: auto;
-
-	@media screen and (max-width: 36rem) {
-		margin-bottom: 1rem;
-	}
 }
 
 .infoAsset__img {
@@ -30,10 +20,6 @@
 
 .infoAsset__informations {
 	margin-left: 1.5rem;
-
-	@media screen and (max-width: 36rem) {
-		margin-left: 0;
-	}
 }
 
 .infoAsset__title {
@@ -42,4 +28,19 @@
 
 .infoAsset__subtitle {
 	margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 36rem) {
+	.infoAsset {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.infoAsset__imgWrapper {
+		margin-bottom: 1rem;
+	}
+
+	.infoAsset__informations {
+		margin-left: 0;
+	}
 }

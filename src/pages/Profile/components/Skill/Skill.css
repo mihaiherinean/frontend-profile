@@ -6,8 +6,10 @@
   border-radius: 3.125rem;
   background-color: var(--color-grey);
   font-weight: 300;
-
-  @media screen and (max-width: 36rem) {
-    padding: 0.5rem 1rem;
 }
+
+@media screen and (max-width: 36rem) {
+  .skill {
+    padding: 0.5rem 1rem;
+  }
 }
