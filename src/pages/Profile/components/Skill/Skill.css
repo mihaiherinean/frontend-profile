@@ -2,7 +2,6 @@
 .skill {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background: red;
   border-radius: 3.125rem;
   background-color: var(--color-grey);
   font-weight: 300;
