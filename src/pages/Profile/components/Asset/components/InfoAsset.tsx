@@ -11,6 +11,7 @@ function InfoAsset({info, className}:IInfoAsset) {
   const classNames = `infoAsset ${className ? className : ''}`;
   return (
     <div className={classNames}>
+      <div className="infoAsset__wrapper">
         <div className="infoAsset__imgWrapper">
             <img src={info.image} alt="" className="infoAsset__img"/>
         </div>
@@ -19,6 +20,11 @@ function InfoAsset({info, className}:IInfoAsset) {
             <p className="infoAsset__subtitle">{info.subtitle}</p>
             <p className="infoAsset__period">{info.period.start + ' - ' + info.period.end}</p>
         </div>
+      </div>
+      <p className="infoAsset__description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus culpa nihil suscipit iure placeat voluptatum ex? Libero placeat sunt dolorum ex, tempore facilis harum laudantium modi dolorem. Debitis, quidem consequatur.
+        Est accusamus alias illo velit error maxime esse praesentium doloribus ad quidem tenetur quo odio harum molestias accusantium, ipsum repudiandae a iure, nisi ducimus? Dolor atque omnis facilis nostrum deleniti.
+      </p>
     </div>
   )
 }

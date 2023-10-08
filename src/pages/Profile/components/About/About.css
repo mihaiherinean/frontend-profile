@@ -38,16 +38,17 @@
 
 .about__position {
   font-size: .875rem;
-  font-weight: 300;
+  font-weight: 100;
 }
 
 .about__description {
-  font-size: 1rem;
+  font-size: 0.875rem;
+  font-weight: 200;
   margin-bottom: 1.5rem;
 }
 
 .about__subtitle {
-  font-size: 1.5rem;
+  font-size: 1.375rem;
   margin-bottom: 1rem;
 }
 

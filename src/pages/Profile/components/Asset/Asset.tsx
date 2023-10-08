@@ -16,7 +16,7 @@ function Asset({ asset, className }: IAssetT) {
     <div className={classNames}>
       <div className="asset_wrapper" onClick={hasExpand ? () => setExpand(!expand) : undefined}>
         <h2 className="asset__name">
-          {asset.name + " (" + asset.info.length + ")"}
+          {asset.name} <span className="asset__number">{"(" + asset.info.length + ")"}</span>
         </h2>
         {hasExpand ? (
           expand ? (

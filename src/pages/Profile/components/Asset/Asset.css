@@ -15,7 +15,15 @@
 }
 
 .asset__name {
- 
+	display: flex;
+	align-items: center;
+	font-size: 1.375rem;
+}
+
+.asset__number {
+	font-size: 16px;
+	margin-left: 4px;
+	display: inline-block;
 }
 
 .asset__list {

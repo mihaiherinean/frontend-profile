@@ -3,6 +3,7 @@
   background-color: var(--color-secondary);
   padding: 1.5rem;
   box-shadow: .125rem .25rem 1rem .125rem var(--color-quaternary);
+  width: 100%;
 }
 
 .basic__title {
@@ -13,7 +14,7 @@
 .basic__informations {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(12.5rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
   gap: 1rem;
   margin-bottom: 2.4rem;
   max-width: 50rem;
