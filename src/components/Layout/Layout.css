@@ -4,6 +4,7 @@
     top: 0;
     left: 0;
     right: 0;
+    color: var(--color-white);
 }
 
 .layout__scroll {
@@ -16,26 +17,14 @@
     overflow: auto;
     background-color: var(--color-quaternary);
     padding: 4.5rem 1rem 1rem;
-
-    @media screen and (min-width: 48rem) {
-        left: 13.9375rem;
-    }
 }
 
 .layout__scroll--move {
     left: 0rem;
-    
-    @media screen and (min-width: 48rem) {
-        left: 13.9375rem;
-    }
 }
 
 .layout__scroll--stay {
     left: 5rem;
-
-    @media screen and (min-width: 48rem) {
-        left: 13.9375rem;
-    }
 }
 
 .layout__header {
@@ -57,12 +46,16 @@
 
 .layout__menu {
     color: var(--color-white);
-
-    @media screen and (min-width: 48rem) {
-        display: none;
-    }
 }
 
-.layout__content{
-    color: var(--color-white);
+@media screen and (min-width: 48rem) {
+    .layout__menu {
+        display: none;
+    }
+
+    .layout__scroll--stay, 
+    .layout__scroll--move, 
+    .layout__scroll{
+        left: 13.9375rem;
+    }
 }
