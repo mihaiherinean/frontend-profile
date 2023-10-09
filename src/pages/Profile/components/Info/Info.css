@@ -1,13 +1,9 @@
 
-.info {
-  
-}
-
 .info__name {
   font-size: 0.875rem;
   font-weight: 400;
   margin-bottom: .625rem;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .info__valueLink, .info__value  {
@@ -35,6 +31,12 @@
       width: .875rem;
       height: .875rem;
       margin-left: .375rem;
+  }
+}
+
+@media screen and (max-width: 36rem) {
+  .info__name, .info__valueLink, .info__value {
+    font-size: .75rem;
   }
 }
 

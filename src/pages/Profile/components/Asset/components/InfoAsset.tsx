@@ -22,8 +22,7 @@ function InfoAsset({info, className}:IInfoAsset) {
         </div>
       </div>
       <p className="infoAsset__description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus culpa nihil suscipit iure placeat voluptatum ex? Libero placeat sunt dolorum ex, tempore facilis harum laudantium modi dolorem. Debitis, quidem consequatur.
-        Est accusamus alias illo velit error maxime esse praesentium doloribus ad quidem tenetur quo odio harum molestias accusantium, ipsum repudiandae a iure, nisi ducimus? Dolor atque omnis facilis nostrum deleniti.
+        {info.description}
       </p>
     </div>
   )

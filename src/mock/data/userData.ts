@@ -5,11 +5,10 @@ export const userData = {
   position: "Frontend Developer",
   generalInfo: {
     age: 24,
-    experience: 1,
-    email: "mihai_herinean@yahoo.com",
     location: "Cluj-Napoca, Romania",
+    email: "mihai_herinean@yahoo.com",
     phone: "+40 7455 34 398",
-    linkedin: "linkedin.com/in/mihaiherinean/",
+    github: "github.com/mihaiherinean",
   },
   description:
     "Hi there, I'm Mihai, a Frontend Developer with over a year of experience in technologies such as HTML, CSS, React, TypeScript, jQuery and Sass. Throughout this year, I have been part of an Agile team, collaborating with QA professionals, Designers, Business Analysts, and Product Managers to deliver high-quality development services.",
@@ -37,6 +36,8 @@ export const userData = {
     "React.js",
     "Node.js",
     "Express.js",
+    "Storybook",
+    "Sitecore",
     "Figma",
     "Adobe XD",
   ],
@@ -57,6 +58,7 @@ export const userData = {
             start: "2018",
             end: "2022",
           },
+          description: "lorem lorem"
         }
       ],
     },
@@ -72,6 +74,7 @@ export const userData = {
             start: "Nov 2022",
             end: "present",
           },
+          description: "lorem"
         },
       ],
     }

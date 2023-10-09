@@ -14,33 +14,25 @@ function Asset({ asset, className }: IAssetT) {
   const hasExpand = asset.info.length >= 1 ? true : false;
   return (
     <div className={classNames}>
-      <div className="asset_wrapper" onClick={hasExpand ? () => setExpand(!expand) : undefined}>
+      <div className="asset__wrapper" onClick={hasExpand ? () => setExpand(!expand) : undefined}>
         <h2 className="asset__name">
           {asset.name} <span className="asset__number">{"(" + asset.info.length + ")"}</span>
         </h2>
-        {hasExpand ? (
-          expand ? (
+        
+          {expand ? (
             <MdOutlineExpandLess size={40}/>
           ) : (
             <MdOutlineExpandMore size={40}/>
-          )
-        ) : null}
+          )}
+        
       </div>
-      {hasExpand ? (
-        expand ? (
+        {expand ? (
           <div className="asset__list">
             {asset.info.map((data) => (
               <InfoAsset info={data} />
             ))}
           </div>
-        ) : null
-      ) : (
-        <div className="asset__list">
-          {asset.info.map((data) => (
-            <InfoAsset info={data} />
-          ))}
-        </div>
-      )}
+        ) : null}
     </div>
   );
 }

@@ -14,7 +14,7 @@
 .basic__informations {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(12.5rem, 1fr));
   gap: 1rem;
   margin-bottom: 2.4rem;
   max-width: 50rem;
@@ -35,6 +35,10 @@
 @media screen and (max-width: 36rem) {
   .basic {
     max-height: 100%;
+  }
+
+  .basic__title {
+    font-size: 1.125rem;
   }
 }
 

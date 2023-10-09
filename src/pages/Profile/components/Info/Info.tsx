@@ -10,12 +10,12 @@ interface IInfo {
 
 function Info({ name, value, className }: IInfo) {
   const classNames = `info ${className ? className : ""}`;
-  const linkedin = name === "linkedin" ? value.toString() : null;
+  const github = name === "github" ? value.toString() : null;
   return (
     <div className={classNames}>
       <p className="info__name">{name}</p>
-      {linkedin ? (
-        <a href={"https://ro." + linkedin} className="info__valueLink" target="_blank" rel="noreferrer">{linkedin}</a>
+      {github ? (
+        <a href={"https://" + github} className="info__valueLink" target="_blank" rel="noreferrer">{github}</a>
       ) : (
         <p className="info__value">{value + " " + getUnit(name)}</p>
       )}

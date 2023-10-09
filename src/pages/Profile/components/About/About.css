@@ -64,3 +64,13 @@
   }
 }
 
+@media screen and (max-width: 36rem) {
+  .about__fullName, .about__subtitle {
+    font-size: 1.125rem;
+  }
+
+  .about__position, .about__description {
+    font-size: .75rem;
+  }
+}
+

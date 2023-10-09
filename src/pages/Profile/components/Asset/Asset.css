@@ -6,7 +6,7 @@
 	margin-bottom: 2rem;
 }
 
-.asset_wrapper {
+.asset__wrapper {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -42,8 +42,14 @@
 }
 
 @media screen and (max-width: 48rem) {
-	.asset_wrapper {
+	.asset__wrapper {
 		cursor: unset;
+	}
+}
+
+@media screen and (max-width: 36rem) {
+	.asset__name {
+		font-size: 1.125rem;
 	}
 }
 
