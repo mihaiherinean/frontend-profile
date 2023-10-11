@@ -1,9 +1,7 @@
 import Profile from "../pages/Profile/Profile";
-import Projects from "../pages/Projects/Projects";
 
 const componentMap:Record<string, React.FC<any>> = {
-  Profile,
-  Projects
+  Profile
 };
 
 export function getComponentByName(componentName:string) {

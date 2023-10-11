@@ -19,7 +19,10 @@ function About({userData, className}:IAbout) {
         <p className="about__fullName">{userData.firstName + " " + userData.lastName}</p>
         <p className="about__position">{userData.position}</p>
       </div>
-      <p className="about__description">{userData.description}</p>
+      <div className="">{userData.description.map(para => (
+         <p className="about__description">{para}</p>
+      ))}</div>
+  
       <h3 className="about__subtitle">Skills</h3>
       <div className="about__skillsWrapper">
         {userData.skills.map((skill) => (

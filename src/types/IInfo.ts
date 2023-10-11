@@ -3,7 +3,7 @@ export interface IInfo {
     subtitle: string,
     image: string,
     period: IPeriod,
-    description: string
+    description: string[]
 }
 
 interface IPeriod {

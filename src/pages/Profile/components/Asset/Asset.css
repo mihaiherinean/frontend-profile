@@ -11,7 +11,6 @@
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 1rem;
-	cursor: pointer;
 }
 
 .asset__name {
@@ -39,12 +38,6 @@
 .asset__list--collapse {
 	width: 0;
 	height: 0;
-}
-
-@media screen and (max-width: 48rem) {
-	.asset__wrapper {
-		cursor: unset;
-	}
 }
 
 @media screen and (max-width: 36rem) {

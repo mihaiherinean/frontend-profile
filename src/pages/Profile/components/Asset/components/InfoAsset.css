@@ -1,12 +1,22 @@
 .infoAsset {
-	border-bottom: 1px solid var(--color-grey);
 	margin-bottom: 1rem;
 }
 
 .infoAsset__wrapper {
 	display: flex;
-	align-items: center;
+	justify-content: space-between;
 	padding-bottom: 1rem;
+}
+
+.infoAsset__expander {
+	display: flex;
+	align-items: center;
+}
+
+.infoAsset__expand, .infoAsset__collapse {
+	&:hover {
+		cursor: pointer;
+	}
 }
 
 .infoAsset__imgWrapper {
@@ -49,6 +59,10 @@
 }
 
 @media screen and (max-width: 36rem) {
+	.infoAsset__wrapper {
+		cursor: unset;
+	}
+
 	.infoAsset__imgWrapper {
 		max-width: 5.625rem;
 	}
