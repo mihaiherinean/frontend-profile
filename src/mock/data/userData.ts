@@ -5,27 +5,23 @@ export const userData = {
   position: "Frontend Developer",
   generalInfo: {
     age: 24,
-    experience: 1,
-    email: "mihai_herinean@yahoo.com",
     location: "Cluj-Napoca, Romania",
+    email: "mihai_herinean@yahoo.com",
     phone: "+40 7455 34 398",
-    linkedin: "linkedin.com/in/mihaiherinean/",
+    github: "github.com/mihaiherinean",
   },
-  description:
-    "Hi There, I'm Mihai, a Frontend Developer with over a year of experience in technologies such as HTML, CSS, React, TypeScript, jQuery and Sass. Throughout this year, I have been part of an Agile team, collaborating with QA professionals, Designers, Business Analysts, and Product Managers to deliver high-quality development services.",
+  description: [
+    "Hey there! I'm a Frontend Developer based in Cluj-Napoca with a bit over a year of hands-on experience working with React and TypeScript. I'm all about creating cool user experiences on the web.",
+    "Beyond that, I'm a motivated individual who's dedicated to continuous improvement. Each day, I'm hard at work, learning and practicing new things in the ever-evolving world of web development.",
+    "I'm also open to exciting opportunities to apply my skills and passion. If you'd like to know more about my work or have a chat about web development, feel free to reach out. Together, we can create some remarkable web experiences.",
+  ],
   routes: [
     {
       name: "Profile",
       title: "Profile page",
       component: "Profile",
       path: "/",
-    },
-    {
-      name: "Projects",
-      title: "Projects page",
-      component: "Projects",
-      path: "/projects",
-    },
+    }
   ],
   skills: [
     "HTML",
@@ -37,6 +33,8 @@ export const userData = {
     "React.js",
     "Node.js",
     "Express.js",
+    "Storybook",
+    "Sitecore",
     "Figma",
     "Adobe XD",
   ],
@@ -57,7 +55,8 @@ export const userData = {
             start: "2018",
             end: "2022",
           },
-        }
+          description: [],
+        },
       ],
     },
     {
@@ -65,15 +64,22 @@ export const userData = {
       info: [
         {
           title: "Wavemyth Global SRL",
-          subtitle:
-            "Frontend Developer",
-          image: "https://media.licdn.com/dms/image/C4E0BAQGCHXetSpQtNw/company-logo_200_200/0/1637597403938?e=2147483647&v=beta&t=Rc1xiT6l1gDl8FE5lvjK0aAQsTyH6-3cveeqi3r5SaI",
+          subtitle: "Frontend Developer",
+          image:
+            "https://media.licdn.com/dms/image/C4E0BAQGCHXetSpQtNw/company-logo_200_200/0/1637597403938?e=2147483647&v=beta&t=Rc1xiT6l1gDl8FE5lvjK0aAQsTyH6-3cveeqi3r5SaI",
           period: {
             start: "Nov 2022",
             end: "present",
           },
+          description: [
+            "As a Frontend Developer at Wavemyth, my time is mainly dedicated to outsourcing for a company that leads six different food brands. In this role, I am responsible for maintaining, redesigning, and developing their websites to ensure they deliver engaging and user-friendly online experiences.",
+            "My toolkit includes HTML, CSS, SCSS, and jQuery, which I skillfully employ to implement dynamic and interactive features on the websites. This technology stack enables me to create visually appealing and highly functional web interfaces.",
+            "I am an integral part of an Agile team, collaborating alongside Business Analysts, Project Managers, Quality Assurance professionals, Designers, and fellow Developers. This collaborative environment allows us to effectively manage and prioritize tasks, ensuring the successful execution of projects.",
+            "In addition to external client work, I actively contribute to internal projects, where I utilize cutting-edge technologies, such as React and TypeScript to develop modern web applications. This experience keeps me at the forefront of web development trends and allows me to apply the latest innovations to our projects.",
+            "Overall, my role as a Frontend Developer at Wavemyth combines a strong focus on website development with active participation in an Agile team, ensuring that our clients' websites provide exceptional online experiences while staying up to date with industry advancements.",
+          ],
         },
       ],
-    }
+    },
   ],
 };

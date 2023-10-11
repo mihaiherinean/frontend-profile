@@ -3,6 +3,7 @@
   background-color: var(--color-secondary);
   padding: 1.5rem;
   box-shadow: .125rem .25rem 1rem .125rem var(--color-quaternary);
+  width: 100%;
 }
 
 .basic__title {
@@ -34,6 +35,10 @@
 @media screen and (max-width: 36rem) {
   .basic {
     max-height: 100%;
+  }
+
+  .basic__title {
+    font-size: 1.125rem;
   }
 }
 

@@ -8,7 +8,7 @@ export interface IUser {
   lastName: string,
   position: string,
   generalInfo: IGeneralInfo,
-  description: string,
+  description: string[],
   routes: IRoute[],
   skills: string[],
   imgUrl: string,

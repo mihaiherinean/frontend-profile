@@ -1,16 +1,42 @@
 
-.info {
-  
-}
-
 .info__name {
-  font-size: 1rem;
-  font-weight: 300;
+  font-size: 0.875rem;
+  font-weight: 400;
   margin-bottom: .625rem;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
-.info__value {
-  font-size: 1rem;
-  font-weight: 500;
+.info__valueLink, .info__value  {
+  font-size: 0.875rem;
+  font-weight: 200;
+  color: var(--color-white);
 }
+
+.info__valueLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  word-break: break-all;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+    &:after {
+      content: "";
+      background-image: url('../../../../icons/external-light.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      display: inline-block;
+      width: .875rem;
+      height: .875rem;
+      margin-left: .375rem;
+  }
+}
+
+@media screen and (max-width: 36rem) {
+  .info__name, .info__valueLink, .info__value {
+    font-size: .75rem;
+  }
+}
+

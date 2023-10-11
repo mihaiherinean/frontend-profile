@@ -1,15 +1,16 @@
 
 .skill {
   display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background: red;
+  padding: 0.5rem 1rem;
   border-radius: 3.125rem;
-  background-color: var(--color-grey);
+  background-color: var(--color-blue-100);
   font-weight: 300;
+  font-size: 0.75rem;
 }
 
 @media screen and (max-width: 36rem) {
   .skill {
     padding: 0.5rem 1rem;
+    font-size: .75rem;
   }
 }
